@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Email</title>
+</head>
+<body>
+<h1>Send Email</h1>
+<form action="#" th:action="@{/}" th:object="${emailForm}" method="post">
+    <table>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" th:field="*{email}" /></td>
+        </tr>
+        <tr>
+            <td>Subject:</td>
+            <td><input type="text" th:field="*{subject}" /></td>
+        </tr>
+        <tr>
+            <td>Body:</td>
+            <td><input type="text" th:field="*{body}" /></td>
+        </tr>
+        <tr>
+            <td><button onclick="SendingEmail()" type="submit">Send</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
