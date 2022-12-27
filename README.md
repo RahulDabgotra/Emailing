@@ -1,6 +1,6 @@
 # Spring MVC Emailing
 
-This is a Spring MVC project to send emails.
+Email Sending Spring Boot MVC Project
 
 ## Configuration 
 
